@@ -1,5 +1,11 @@
-export default function AuthLayout({ children }: { children: React.ReactNode }) {
-    return <div className="min-h-dvh grid place-items-center p-6">{children}</div>;
+export default function AuthLayout({
+    children,
+}: {
+    children: React.ReactNode
+}) {
+    return (
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+            {children}
+        </div>
+    )
 }
-
-
